@@ -2,22 +2,13 @@ Mean stack tutorial
 -------------------------------
 Steps:
 ---------------------
-1.install node js and set the path 
-2.creatre a folder any where
-(eg.C:\MeanstackProject)
-3.create one server.js file in created dir(eg.C:\MeanstackProject\server.js)
-4.install express js
-goto created dir.(eg. C:\MeanstackProject)
+1.Downone or clone "https://github.com/niket024/MEAN-Stack-Development"
+goto MeanStack
+eg. D:\Niket\learnings\Git\MeanStack\MEAN-Stack-Development\MeanStack
 and run npm install express
+(Make sure you have install node)
 
-5. open the server.js
-and type
-var express = require('express');
-var app = express();
-app.use(express.static(__dirname + "/main/html"));
-app.listen(3000);
-console.log("server running on port 30000");
-6.goto cmd and type node server
+goto cmd and type "node server"
 if u r getting o/p like "server running on port 30000"
 then your server is responding
 
@@ -28,19 +19,22 @@ steps:
 -----------
 1.install in any folder(eg:C:\MongoDB)
 2.run mongod in dmc from install bin dir(eg:C:\MongoDB\bin>mongod)
-3.create dir in c drive like c:\data\db
-4.run mongo from bin in other cmd from bin dir(eg:C:\MongoDB\bin>mongo)
+3.run mongo from bin in other cmd from bin dir(eg:C:\MongoDB\bin>mongo)
 (you will get connecting to: mongodb://127.0.0.1:27017)
 
 MongoDB command:
 ---------------------
 1.to show all db
 show dbs
-2.create database od switched to db
+2.create database db switched to db
 use databasename
+(This application is using databse as contactlist)
+
 3.to insert value in mongodb databse
 db.databsename.insert({json format data})
-(eg.db.contactlist.insert({name:'ramesh',email:'rames@gmail.com',number:'76454565666'}))
+eg. 
+db.contactlist.insert({name:'ramesh',email:'rames@gmail.com',number:'76454565666'})
+
 you will get 
 WriteResult({ "nInserted" : 1 })
 4.to see inserted value
